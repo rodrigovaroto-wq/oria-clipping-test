@@ -2,6 +2,7 @@ export interface Post {
   slug: string;
   title: string;
   description: string;
+  summary_full?: string;
   date: string; // ISO YYYY-MM-DD
   category: string;
   source_name?: string;
