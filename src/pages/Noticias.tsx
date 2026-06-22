@@ -62,7 +62,7 @@ const NoticiasPage = () => {
   return (
     <>
       <Nav />
-      <main className="pt-8 md:pt-12 bg-background">
+      <main className="pt-32 md:pt-40 bg-background">
         <section className="py-4 md:py-6">
           <div className="container-oria">
             <SectionHeader
