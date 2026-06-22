@@ -76,7 +76,7 @@ const NoticiasPage = () => {
             />
 
             {/* Filter bar */}
-            <div className="mb-10 grid gap-4 md:grid-cols-[1fr_auto_auto] md:items-end">
+            <div className="-mt-8 md:-mt-16 mb-10 grid gap-4 md:grid-cols-[1fr_auto_auto] md:items-end">
               <div>
                 <label className="font-mono-label text-[10px] text-muted block mb-2">
                   {labels.search}
