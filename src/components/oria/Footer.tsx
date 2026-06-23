@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <footer className="bg-foreground text-background/60 py-12 border-t border-background/12 text-[13px]">
       <div className="container-oria flex flex-wrap justify-between items-center gap-6">
-        <div className="h-20 sm:h-32 md:h-40 flex items-center">
+        <div className="h-40 flex items-center">
           <img src={logo} alt="Oria Partners" width={720} height={480} className="h-full w-auto block max-w-full" />
         </div>
         <div className="flex items-center gap-4">
