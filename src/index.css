@@ -59,7 +59,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Iowan Old Style', 'Iowan Old Style BT', 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 17px;
     line-height: 1.55;
@@ -69,6 +69,13 @@
     overflow-x: hidden;
     width: 100%;
     max-width: 100vw;
+  }
+
+  /* Unified typography — never render italics from <em> */
+  em, i, cite, address {
+    font-style: normal;
+    font-weight: inherit;
+    color: inherit;
   }
 
   img, video, iframe, svg {
