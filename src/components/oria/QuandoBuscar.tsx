@@ -1,70 +1,43 @@
-import { SectionHeader } from "./SectionHeader";
 import { ArrowRight } from "./Icons";
 import { useContent } from "@/data/oria";
 
 export const QuandoBuscar = () => {
   const { GATILHOS, UI } = useContent();
   return (
-    <section id="quando-buscar" className="bg-foreground text-background py-24 md:py-36">
+    <section
+      id="quando-buscar"
+      style={{ backgroundColor: "#11161D", color: "#F6F4EE" }}
+      className="py-14 md:py-16"
+    >
       <div className="container-oria">
-        <SectionHeader
-          invert
-          num={UI.quandoBuscar.num}
-          heading={
-            <>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-14 items-start">
+          <div className="md:col-span-1">
+            <div className="font-mono-label text-[11px] mb-5" style={{ color: "#F6F4EE" }}>
+              {UI.quandoBuscar.num}
+            </div>
+            <h2 className="font-medium tracking-tight text-[clamp(22px,2.6vw,30px)] leading-[1.2] mb-7" style={{ color: "#F6F4EE" }}>
               {UI.quandoBuscar.headingA}
-              <em className="italic font-light text-accent-soft">{UI.quandoBuscar.headingB}</em>
-            </>
-          }
-          intro={UI.quandoBuscar.intro}
-        />
+              <br />
+              {UI.quandoBuscar.headingB}
+            </h2>
+            <a href="#contato" className="btn-inverted">
+              {UI.quandoBuscar.cta}
+              <ArrowRight />
+            </a>
+          </div>
 
-        <div className="grid md:grid-cols-2 gap-px bg-background/15 border border-background/15 reveal">
-          {GATILHOS.map((g) => (
-            <article key={g.title} className="bg-foreground p-6 sm:p-9 md:p-10 flex gap-4 sm:gap-6 items-start">
-              <span className="font-serif-display italic text-2xl text-accent-soft font-light shrink-0 leading-none min-w-[28px]">
-                {g.mark}
-              </span>
-              <div className="flex-1 min-w-0">
-                <h4 className="font-serif-display text-[clamp(18px,4.5vw,22px)] font-normal leading-[1.2] tracking-[-0.01em] mb-3">
+          <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            {GATILHOS.map((g) => (
+              <div key={g.title} className="border-t pt-5" style={{ borderColor: "rgba(246,244,238,0.2)" }}>
+                <h4 className="font-medium text-[15px] md:text-[16px] leading-snug mb-3" style={{ color: "#F6F4EE" }}>
                   {g.title}
                 </h4>
-                <p className="text-[14.5px] leading-[1.6] text-background/75 font-light mb-4">
+                <p className="text-[13.5px] md:text-[14px] leading-[1.55]" style={{ color: "#F6F4EE", opacity: 0.78 }}>
                   {g.desc}
-                  {g.italicSuffix && (
-                    <>
-                      {" "}
-                      <em className="italic">{g.italicSuffix}</em>
-                    </>
-                  )}
                 </p>
-                {g.bullets && (
-                  <ul className="list-none flex flex-col gap-1.5 border-t border-background/15 pt-4">
-                    {g.bullets.map((b) => (
-                      <li
-                        key={b}
-                        className="text-[13px] leading-[1.5] text-background/65 font-light flex gap-3"
-                      >
-                        <span className="text-accent-soft shrink-0">—</span>
-                        <span>{b}</span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
               </div>
-            </article>
-          ))}
-        </div>
-
-        <div className="mt-16 md:mt-20 pt-12 md:pt-14 border-t border-background/15 flex flex-col gap-10">
-          <div className="font-serif-display italic font-light text-[clamp(18px,3.2vw,28px)] leading-[1.3] max-w-[720px] flex flex-col gap-4">
-            <p>{UI.quandoBuscar.quoteA}</p>
-            <p>{UI.quandoBuscar.quoteB}</p>
+            ))}
           </div>
-          <a href="#contato" className="btn-inverted self-start">
-            {UI.quandoBuscar.cta}
-            <ArrowRight />
-          </a>
         </div>
       </div>
     </section>
