@@ -6,24 +6,18 @@ export type NavLink = { href: string; label: string; external?: boolean };
 
 // ============ NAV ============
 const NAV_PT: NavLink[] = [
-  { href: "/#sobre", label: "Sobre" },
+  { href: "/#sobre", label: "Quem Somos" },
   { href: "/atuacao", label: "Atuação", external: true },
-  { href: "/#quando-buscar", label: "Quando Buscar" },
-  { href: "/#diferenciais", label: "Diferenciais" },
   { href: "/casos", label: "Casos", external: true },
   { href: "/socios", label: "Sócios", external: true },
   { href: "/noticias", label: "Notícias", external: true },
-  { href: "/#contato", label: "Contato" },
 ];
 const NAV_EN: NavLink[] = [
-  { href: "/#sobre", label: "About" },
+  { href: "/#sobre", label: "Who We Are" },
   { href: "/atuacao", label: "Services", external: true },
-  { href: "/#quando-buscar", label: "When to Engage" },
-  { href: "/#diferenciais", label: "What Sets Us Apart" },
   { href: "/casos", label: "Case Studies", external: true },
   { href: "/socios", label: "Partners", external: true },
   { href: "/noticias", label: "News", external: true },
-  { href: "/#contato", label: "Contact" },
 ];
 
 // ============ NÚMEROS ============
