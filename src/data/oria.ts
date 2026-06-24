@@ -34,25 +34,21 @@ const NUMEROS_EN = [
 
 // ============ SOBRE ============
 const SOBRE_PT = {
-  eyebrow: "QUEM SOMOS",
-  heading: "Boutique independente de reestruturação financeira e soluções estratégicas",
+  eyebrow: "Quem somos",
+  heading: "",
   paragraphs: [
-    "A Oria Partners é uma boutique independente especializada em reestruturação financeira, turnaround e situações especiais. Atuamos em contextos de alta complexidade, nos quais decisões estratégicas precisam ser tomadas com agilidade, precisão e alinhamento entre múltiplas partes interessadas.",
-    "Assessoramos empresas de middle e corporate, além de instituições financeiras, sempre com atuação independente e profissional. Nosso trabalho envolve o diagnóstico da delimitação de um grupo de controle, situação financeira e operacional, a construção de consensos entre stakeholders e a estruturação de soluções viáveis para estabilização, liquidez e recuperação de valor.",
-    "Atuamos em processos de renegociação de passivos, reestruturações financeiras e operacionais, captação de liquidez, venda de ativos e demais operações relacionadas a cenários de transformação empresarial e situações especiais.",
+    "A Oria Partners é uma boutique independente especializada em reestruturação financeira, turnaround e situações especiais. Assessoramos empresas de middle e corporate e instituições financeiras em contextos de alta complexidade, conduzindo diagnósticos verificáveis, construindo consenso entre stakeholders e estruturando soluções viáveis para estabilização, liquidez e recuperação de valor.",
+    "Atuamos em renegociação de passivos, reestruturações financeiras e operacionais, captação de liquidez e venda de ativos, com track record de casos complexos de grande sucesso reconhecidos como referências de mercado em recuperação de valor e coordenação entre credores e acionistas.",
     "Nossa abordagem combina profundidade técnica, visão estratégica e histórico comprovado de resultados na condução de processos complexos, com foco em execução, preservação de valor e tomada de decisão baseada em análise independente.",
-    "No que refere-se à recuperação de valor e coordenação entre credores e acionistas, a Oria Partners possui casos complexos de grande sucesso referências de mercado.",
   ],
 };
 const SOBRE_EN = {
-  eyebrow: "WHO WE ARE",
-  heading: "Independent boutique for financial restructuring and strategic solutions",
+  eyebrow: "Who we are",
+  heading: "",
   paragraphs: [
-    "Oria Partners is an independent boutique specialized in financial restructuring, turnaround and special situations. We operate in highly complex contexts, where strategic decisions must be made with agility, precision and alignment among multiple stakeholders.",
-    "We advise middle-market and corporate companies, as well as financial institutions, always with independent and professional conduct. Our work involves diagnosing the scope of a control group, the financial and operational situation, building consensus among stakeholders and structuring viable solutions for stabilization, liquidity and value recovery.",
-    "We act in liability renegotiation processes, financial and operational restructurings, liquidity raises, asset sales and other transactions related to corporate transformation scenarios and special situations.",
+    "Oria Partners is an independent boutique specialized in financial restructuring, turnaround and special situations. We advise middle-market and corporate companies and financial institutions in highly complex contexts, delivering verifiable diagnoses, building consensus among stakeholders and structuring viable solutions for stabilization, liquidity and value recovery.",
+    "We act in liability renegotiation, financial and operational restructurings, liquidity raises and asset sales, with a track record of highly successful complex cases recognized as market references in value recovery and coordination among creditors and shareholders.",
     "Our approach combines technical depth, strategic vision and a proven track record of results in conducting complex processes, focused on execution, value preservation and decision-making based on independent analysis.",
-    "When it comes to value recovery and coordination among creditors and shareholders, Oria Partners has highly successful complex cases that are recognized as market references.",
   ],
 };
 
