@@ -72,15 +72,16 @@ const NumeroItem = ({
   const v = useCountUp(item.value, 1500, start);
   return (
     <div className="flex flex-col items-center max-w-[280px]">
-      <span aria-hidden="true" className="block h-px w-16 mb-5" style={{ backgroundColor: "#C0492E" }} />
-      <div className="font-bold leading-none tracking-tight text-[clamp(44px,5.5vw,68px)] mb-4" style={{ color: "#F6F4EE" }}>
+      <div className="font-bold leading-none tracking-tight text-[clamp(44px,5.5vw,68px)] mb-2" style={{ color: "#F6F4EE" }}>
         {item.prefix}
         {v}
         {item.suffix}
       </div>
+      <span aria-hidden="true" className="block h-px w-16 mb-2" style={{ backgroundColor: "#C0492E" }} />
       <div className="text-[15px] md:text-[16px] leading-[1.5]" style={{ color: "#F6F4EE", opacity: 0.85 }}>
         {item.label}
       </div>
     </div>
   );
 };
+

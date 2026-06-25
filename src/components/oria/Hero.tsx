@@ -52,15 +52,15 @@ export const Hero = () => {
       className="container-oria w-full relative flex flex-col"
       style={{
         zIndex: 2,
-        marginTop: "80px",
         paddingTop: "32px",
         paddingBottom: "32px",
       }}
     >
       <div className="max-w-full">
-        <h1 className="font-serif-display font-bold tracking-[-0.025em] text-white animate-fade-up [animation-delay:.1s] max-w-full md:max-w-[60%]"
-          style={{ fontSize: "clamp(2rem, 3.5vw, 4rem)", lineHeight: 1.2, marginBottom: "32px", wordBreak: "normal", overflowWrap: "break-word", hyphens: "none", fontWeight: 700 }}
+        <h1 className="font-bold tracking-[-0.025em] text-white animate-fade-up [animation-delay:.1s] max-w-full md:max-w-[60%] text-[2.25rem] md:text-[3rem] lg:text-[3.75rem]"
+          style={{ lineHeight: 1.2, marginBottom: "32px", wordBreak: "normal", overflowWrap: "break-word", hyphens: "none", fontWeight: 700 }}
         >
+
           {UI.hero.h1Lines.map((line, i) => (
             <span key={i}>
               {line.italic ? (

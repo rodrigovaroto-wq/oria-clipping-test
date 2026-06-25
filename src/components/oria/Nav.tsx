@@ -8,8 +8,12 @@ export const Nav = () => {
   const { NAV_LINKS, UI } = useContent();
   const { lang, setLang } = useLang();
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+
+  const isHome = location.pathname === "/";
+  const transparent = isHome && !scrolled && !open;
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
@@ -22,9 +26,16 @@ export const Nav = () => {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 10);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   const handleLogoClick = (e: React.MouseEvent) => {
     setOpen(false);
-    if (location.pathname === "/") {
+    if (isHome) {
       e.preventDefault();
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
@@ -36,7 +47,7 @@ export const Nav = () => {
     e.preventDefault();
     if (link.href.startsWith("/#")) {
       const id = link.href.slice(2);
-      if (location.pathname !== "/") {
+      if (!isHome) {
         navigate("/");
         setTimeout(() => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" }), 100);
       } else {
@@ -48,7 +59,9 @@ export const Nav = () => {
   return (
     <>
       <nav
-        className="sticky top-0 z-50 border-b border-rule bg-background"
+        className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
+          transparent ? "bg-transparent border-b border-transparent" : "bg-background border-b border-rule"
+        }`}
         style={{ height: 88 }}
       >
         <div className="container-oria h-full flex items-center justify-between gap-6">
@@ -63,7 +76,8 @@ export const Nav = () => {
               alt="Oria Partners"
               width={400}
               height={400}
-              className="h-full w-auto max-h-full block object-contain py-2"
+              className="h-full w-auto max-h-full block object-contain"
+              style={{ padding: "2px 0" }}
             />
           </Link>
 
@@ -77,7 +91,9 @@ export const Nav = () => {
                   key={l.href}
                   {...props}
                   onClick={(e: React.MouseEvent<HTMLAnchorElement>) => handleNavClick(e, l)}
-                  className="text-[22px] tracking-[0.01em] text-foreground transition-colors hover:text-accent whitespace-nowrap"
+                  className={`text-[22px] tracking-[0.01em] transition-colors hover:text-accent whitespace-nowrap ${
+                    transparent ? "text-white" : "text-foreground"
+                  }`}
                 >
                   {l.label}
                 </Comp>
@@ -87,9 +103,9 @@ export const Nav = () => {
 
           <div className="flex items-center gap-4 sm:gap-5 shrink-0">
             <a
-              href={location.pathname === "/" ? "#contato" : "/#contato"}
+              href={isHome ? "#contato" : "/#contato"}
               onClick={(e) => {
-                if (location.pathname === "/") {
+                if (isHome) {
                   e.preventDefault();
                   document.getElementById("contato")?.scrollIntoView({ behavior: "smooth" });
                 }
@@ -98,19 +114,19 @@ export const Nav = () => {
             >
               {lang === "en" ? "Contact" : "Contato"}
             </a>
-            <div className="font-mono text-[11px] tracking-[0.15em] flex items-center gap-2">
+            <div className={`font-mono text-[11px] tracking-[0.15em] flex items-center gap-2 ${transparent ? "text-white" : ""}`}>
               <button
                 type="button"
                 onClick={() => setLang("pt")}
-                className={`cursor-pointer transition-colors ${lang === "pt" ? "text-foreground" : "text-muted hover:text-foreground"}`}
+                className={`cursor-pointer transition-colors ${lang === "pt" ? (transparent ? "text-white" : "text-foreground") : "opacity-60 hover:opacity-100"}`}
               >
                 PT
               </button>
-              <span className="text-rule">/</span>
+              <span className="opacity-60">/</span>
               <button
                 type="button"
                 onClick={() => setLang("en")}
-                className={`cursor-pointer transition-colors ${lang === "en" ? "text-foreground" : "text-muted hover:text-foreground"}`}
+                className={`cursor-pointer transition-colors ${lang === "en" ? (transparent ? "text-white" : "text-foreground") : "opacity-60 hover:opacity-100"}`}
               >
                 EN
               </button>
@@ -122,9 +138,9 @@ export const Nav = () => {
               className="flex lg:hidden flex-col gap-[5px] p-2 -mr-2"
               onClick={() => setOpen(!open)}
             >
-              <span className={`block w-6 h-px bg-foreground transition-all duration-300 ${open ? "rotate-45 translate-y-[6px]" : ""}`} />
-              <span className={`block w-6 h-px bg-foreground transition-all duration-300 ${open ? "opacity-0" : ""}`} />
-              <span className={`block w-6 h-px bg-foreground transition-all duration-300 ${open ? "-rotate-45 -translate-y-[6px]" : ""}`} />
+              <span className={`block w-6 h-px transition-all duration-300 ${transparent ? "bg-white" : "bg-foreground"} ${open ? "rotate-45 translate-y-[6px]" : ""}`} />
+              <span className={`block w-6 h-px transition-all duration-300 ${transparent ? "bg-white" : "bg-foreground"} ${open ? "opacity-0" : ""}`} />
+              <span className={`block w-6 h-px transition-all duration-300 ${transparent ? "bg-white" : "bg-foreground"} ${open ? "-rotate-45 -translate-y-[6px]" : ""}`} />
             </button>
           </div>
         </div>
@@ -147,7 +163,7 @@ export const Nav = () => {
                   <Comp
                     {...props}
                     onClick={(e: React.MouseEvent<HTMLAnchorElement>) => handleNavClick(e, l)}
-                    className={`group font-serif-display text-3xl sm:text-4xl text-foreground inline-flex items-baseline gap-5 transition-all duration-500 hover:text-accent ${
+                    className={`group text-3xl sm:text-4xl text-foreground inline-flex items-baseline gap-5 transition-all duration-500 hover:text-accent ${
                       open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
                     }`}
                     style={{ transitionDelay: open ? `${100 + i * 35}ms` : "0ms" }}
@@ -163,10 +179,10 @@ export const Nav = () => {
             })}
             <li>
               <a
-                href={location.pathname === "/" ? "#contato" : "/#contato"}
+                href={isHome ? "#contato" : "/#contato"}
                 onClick={(e) => {
                   setOpen(false);
-                  if (location.pathname === "/") {
+                  if (isHome) {
                     e.preventDefault();
                     setTimeout(() => document.getElementById("contato")?.scrollIntoView({ behavior: "smooth" }), 50);
                   }

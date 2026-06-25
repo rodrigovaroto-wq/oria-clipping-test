@@ -1,5 +1,8 @@
 import { ArrowRight } from "./Icons";
 import { useContent } from "@/data/oria";
+import { AlertTriangle, Banknote, Hourglass, type LucideIcon } from "lucide-react";
+
+const GATILHO_ICONS: LucideIcon[] = [AlertTriangle, Banknote, Hourglass];
 
 export const QuandoBuscar = () => {
   const { GATILHOS, UI } = useContent();
@@ -29,20 +32,31 @@ export const QuandoBuscar = () => {
           </div>
 
           <div className="flex flex-col">
-            {GATILHOS.map((g) => (
-              <div
-                key={g.title}
-                className="py-5 first:pt-0"
-                style={{ borderBottom: "1px solid rgba(246,244,238,0.18)" }}
-              >
-                <h4 className="font-semibold text-[16px] md:text-[17px] leading-snug mb-2" style={{ color: "#F6F4EE" }}>
-                  {g.title}
-                </h4>
-                <p className="text-[14px] md:text-[14.5px] leading-[1.55]" style={{ color: "#F6F4EE", opacity: 0.78 }}>
-                  {g.desc}
-                </p>
-              </div>
-            ))}
+            {GATILHOS.map((g, i) => {
+              const Icon = GATILHO_ICONS[i % GATILHO_ICONS.length];
+              return (
+                <div
+                  key={g.title}
+                  className="py-5 first:pt-0 flex gap-4"
+                  style={{ borderBottom: "1px solid rgba(246,244,238,0.18)" }}
+                >
+                  <Icon
+                    aria-hidden="true"
+                    className="shrink-0 mt-[2px]"
+                    style={{ width: 28, height: 28, color: "#C0492E" }}
+                    strokeWidth={1.5}
+                  />
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-[16px] md:text-[17px] leading-snug mb-2" style={{ color: "#F6F4EE" }}>
+                      {g.title}
+                    </h4>
+                    <p className="text-[14px] md:text-[14.5px] leading-[1.55]" style={{ color: "#F6F4EE", opacity: 0.78 }}>
+                      {g.desc}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
