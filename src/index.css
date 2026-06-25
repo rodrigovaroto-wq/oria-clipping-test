@@ -107,10 +107,17 @@
     text-transform: uppercase;
   }
   .container-oria {
-    max-width: 1320px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 clamp(18px, 4vw, 48px);
+    padding: 0 40px;
     width: 100%;
+  }
+  .section-title-indent {
+    padding-left: 24px;
+  }
+  @media (max-width: 768px) {
+    .container-oria { padding: 0 20px; }
+    .section-title-indent { padding-left: 12px; }
   }
 }
 
