@@ -51,7 +51,7 @@
   }
 
   html {
-    font-size: clamp(12px, 1.1vw, 18px);
+    font-size: 16px;
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
     overflow-x: hidden;
@@ -69,7 +69,11 @@
     overflow-x: hidden;
     width: 100%;
     max-width: 100vw;
+    padding-top: 88px;
   }
+
+  .hero { margin-top: -88px; }
+
 
   /* Unified typography — never render italics from <em> */
   em, i, cite, address {
