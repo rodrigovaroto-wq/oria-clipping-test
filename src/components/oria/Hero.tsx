@@ -58,7 +58,7 @@ export const Hero = () => {
     >
       <div className="max-w-full">
         <h1 className="font-bold tracking-[-0.025em] text-white animate-fade-up [animation-delay:.1s] max-w-full md:max-w-[90%] text-[1.75rem] md:text-[2.5rem] lg:text-[3rem]"
-          style={{ lineHeight: 1.15, marginBottom: "32px", wordBreak: "normal", overflowWrap: "break-word", hyphens: "none", fontWeight: 700 }}
+          style={{ lineHeight: 1.15, marginBottom: "32px", wordBreak: "normal", overflowWrap: "break-word", hyphens: "none", fontWeight: 700, whiteSpace: "pre-line" }}
         >
 
           {UI.hero.h1Lines.map((line, i) => (
