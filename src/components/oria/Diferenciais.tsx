@@ -25,33 +25,36 @@ const HoverCard = ({
   Icon: LucideIcon;
 }) => (
   <div
-    className="group relative bg-background min-h-[300px] w-full overflow-hidden transition-colors duration-300"
-    style={{ border: "1px solid #C0492E" }}
+    className="group relative w-full overflow-hidden transition-colors duration-300"
+    style={{
+      backgroundColor: "#EEEBE2",
+      border: "1px solid #C0492E",
+      minHeight: 240,
+    }}
   >
-    {/* Background icon, centered, 70% opacity terracotta */}
-    <Icon
-      aria-hidden="true"
-      className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0"
-      style={{ width: 96, height: 96, color: "#C0492E", opacity: 0.7 }}
-      strokeWidth={1.25}
-    />
-    {/* Title layer (default) */}
-    <div className="absolute inset-0 z-10 flex items-center justify-center p-5 text-center transition-opacity duration-300 group-hover:opacity-0">
-      <h3 className="text-[15px] md:text-[16px] font-medium leading-snug text-foreground">
+    {/* Default state: title on top, icon below */}
+    <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 p-4 text-center transition-opacity duration-300 group-hover:opacity-0">
+      <h3 className="text-[19px] md:text-[20px] font-medium leading-snug text-foreground">
         {title}
       </h3>
+      <Icon
+        aria-hidden="true"
+        style={{ width: 56, height: 56, color: "#C0492E", opacity: 1 }}
+        strokeWidth={1.5}
+      />
     </div>
-    {/* Description layer (hover) */}
+    {/* Hover layer: description */}
     <div
-      className="absolute inset-0 z-20 flex items-center justify-center p-5 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 overflow-y-auto"
+      className="absolute inset-0 z-20 flex items-center justify-center p-4 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 overflow-y-auto"
       style={{ backgroundColor: "#11161D" }}
     >
-      <p className="text-[13px] leading-[1.55]" style={{ color: "#F6F4EE" }}>
+      <p className="text-[17px] leading-[1.5]" style={{ color: "#F6F4EE" }}>
         {desc}
       </p>
     </div>
   </div>
 );
+
 
 export const Diferenciais = () => {
   const { PILARES, INEGOCIAVEIS, UI } = useContent();
@@ -59,7 +62,7 @@ export const Diferenciais = () => {
     <section id="diferenciais" className="bg-background py-20 md:py-28">
       <div className="container-oria">
         <div className="mb-10 md:mb-14 reveal text-center max-w-[820px] mx-auto">
-          <h2 className="text-foreground font-medium text-[clamp(26px,4vw,42px)] tracking-tight leading-[1.15] mb-6">
+          <h2 className="text-foreground font-medium text-[clamp(30px,4.6vw,46px)] tracking-tight leading-[1.15] mb-6">
             {UI.diferenciais.headingA}
           </h2>
           {UI.diferenciais.intro && (
