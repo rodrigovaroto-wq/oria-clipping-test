@@ -8,9 +8,9 @@ export const Hero = () => {
     id="hero"
     className="hero relative overflow-hidden w-full flex flex-col justify-center"
     style={{
-      height: "calc(100dvh - 64px)",
-      minHeight: "calc(100dvh - 64px)",
-      maxHeight: "calc(100dvh - 64px)",
+      height: "calc(100dvh - 72px)",
+      minHeight: "calc(100dvh - 72px)",
+      maxHeight: "calc(100dvh - 72px)",
       backgroundColor: "#000",
     }}
   >
@@ -57,7 +57,7 @@ export const Hero = () => {
       }}
     >
       <div className="max-w-full">
-        <h1 className="font-bold tracking-[-0.025em] text-white animate-fade-up [animation-delay:.1s] max-w-full md:max-w-[90%] text-[1.75rem] md:text-[2.5rem] lg:text-[3rem]"
+        <h1 className="font-bold tracking-[-0.025em] text-white animate-fade-up [animation-delay:.1s] max-w-full md:max-w-[90%] text-[1.45rem] md:text-[2.2rem] lg:text-[2.7rem]"
           style={{ lineHeight: 1.15, marginBottom: "32px", wordBreak: "normal", overflowWrap: "break-word", hyphens: "none", fontWeight: 700, whiteSpace: "pre-line" }}
         >
 

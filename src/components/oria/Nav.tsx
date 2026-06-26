@@ -27,7 +27,7 @@ export const Nav = () => {
   }, []);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 10);
+    const onScroll = () => setScrolled(window.scrollY > 0);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -62,7 +62,7 @@ export const Nav = () => {
         className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
           transparent ? "bg-transparent border-b border-transparent" : "bg-background border-b border-rule"
         }`}
-        style={{ height: 64 }}
+        style={{ height: 72 }}
       >
         <div className="container-oria h-full flex items-center justify-between gap-6">
           <Link
@@ -77,7 +77,7 @@ export const Nav = () => {
               width={400}
               height={400}
               className="h-full w-auto max-h-full block object-contain"
-              style={{ padding: "3px 0" }}
+              style={{ padding: "2px 0" }}
             />
           </Link>
 
