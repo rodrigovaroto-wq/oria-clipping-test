@@ -7,10 +7,10 @@ export const Hero = () => {
   <section
     id="hero"
     className="hero relative overflow-hidden w-full flex flex-col justify-center"
-    style={{
-      height: "calc(100dvh - 72px)",
-      minHeight: "calc(100dvh - 72px)",
-      maxHeight: "calc(100dvh - 72px)",
+      style={{
+        height: "calc(100dvh - 84px)",
+        minHeight: "calc(100dvh - 84px)",
+        maxHeight: "calc(100dvh - 84px)",
       backgroundColor: "#000",
     }}
   >
