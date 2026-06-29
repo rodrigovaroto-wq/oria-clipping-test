@@ -62,7 +62,7 @@ export const Nav = () => {
         className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
           transparent ? "bg-transparent border-b border-transparent" : "bg-background border-b border-rule"
         }`}
-        style={{ height: 72 }}
+      style={{ height: 84 }}
       >
         <div className="container-oria h-full flex items-center justify-between gap-6">
           <Link
@@ -77,7 +77,7 @@ export const Nav = () => {
               width={400}
               height={400}
               className="h-full w-auto max-h-full block object-contain"
-              style={{ padding: "2px 0" }}
+              style={{ padding: 0 }}
             />
           </Link>
 
@@ -91,7 +91,7 @@ export const Nav = () => {
                   key={l.href}
                   {...props}
                   onClick={(e: React.MouseEvent<HTMLAnchorElement>) => handleNavClick(e, l)}
-                  className={`text-[22px] tracking-[0.01em] transition-colors hover:text-accent whitespace-nowrap ${
+                  className={`text-[19px] tracking-[0.01em] transition-colors hover:text-accent whitespace-nowrap ${
                     transparent ? "text-white" : "text-foreground"
                   }`}
                 >
