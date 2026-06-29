@@ -8,11 +8,11 @@ export const Hero = () => {
     id="hero"
     className="hero relative overflow-hidden w-full flex flex-col justify-center"
       style={{
-        height: "calc(100dvh - 84px)",
-        minHeight: "calc(100dvh - 84px)",
-        maxHeight: "calc(100dvh - 84px)",
-      backgroundColor: "#000",
-    }}
+        height: "100dvh",
+        minHeight: "100dvh",
+        maxHeight: "100dvh",
+        backgroundColor: "#000",
+      }}
   >
     {/*
       poster="/og-image.png" — exibido imediatamente enquanto o vídeo carrega.
@@ -52,7 +52,7 @@ export const Hero = () => {
       className="container-oria w-full relative flex flex-col"
       style={{
         zIndex: 2,
-        paddingTop: "32px",
+        paddingTop: "116px",
         paddingBottom: "32px",
       }}
     >
