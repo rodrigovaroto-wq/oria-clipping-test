@@ -66,14 +66,10 @@ export const Contato = () => {
   const labelCls = "font-mono-label text-[10px] text-background/50 block mb-2";
 
   return (
-    {/*
-      pt aumentado para dar mais espaço entre início da seção e o tópico Contato.
-      pb aumentado levemente para afastar o botão do rodapé.
-    */}
     <section id="contato" className="bg-foreground text-background">
-      <div className="container-oria py-32 md:py-40 pb-32 md:pb-40">
-        {/* Tópico "Contato" alinhado à esquerda */}
-        <div className="font-mono-label text-[10px] text-background/50 mb-6 text-left">
+      <div className="container-oria pt-40 md:pt-48 pb-32 md:pb-40">
+        {/* Tópico Contato: à esquerda, com margem inferior generosa antes do bloco centralizado */}
+        <div className="font-mono-label text-[10px] text-background/50 mb-12 text-left">
           {UI.contato.label}
         </div>
         {/* Título e demais elementos centralizados */}
@@ -185,7 +181,6 @@ export const Contato = () => {
                   />
                   {errors.mensagem && <p className="text-[12px] text-accent-soft mt-2">{errors.mensagem}</p>}
                 </div>
-                {/* pb-8 para afastar o botão do rodapé */}
                 <div className="sm:col-span-2 pt-2 pb-8">
                   <button type="submit" disabled={submitting} className="btn-inverted">
                     {submitting ? "Enviando..." : UI.contato.submit}

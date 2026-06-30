@@ -10,7 +10,6 @@ export const Footer = () => {
 
         {/* ── DESKTOP ── */}
         <div className="hidden md:flex items-start justify-between gap-8 pb-6 border-b border-background/12">
-          {/* Logo com padding pequeno para não grudar na borda */}
           <div style={{ paddingTop: "8px", paddingLeft: "4px" }}>
             <img
               src={logo}
@@ -21,8 +20,6 @@ export const Footer = () => {
               style={{ height: "204px", maxWidth: "100%" }}
             />
           </div>
-
-          {/* Política à esquerda das guias com gap maior */}
           <div className="flex flex-row items-start gap-16 text-[14.4px]">
             <div className="flex items-center h-full pt-1">
               <Link
@@ -46,22 +43,22 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* ── MOBILE ── */}
+        {/* ── MOBILE: layout totalmente responsivo ── */}
         <div className="md:hidden pb-6 border-b border-background/12">
-          {/* Logo menor no mobile */}
-          <div style={{ paddingTop: "6px", marginBottom: "16px" }}>
-            <img
-              src={logo}
-              alt="Oria Partners"
-              width={720}
-              height={480}
-              className="block w-auto"
-              style={{ height: "80px", maxWidth: "100%" }}
-            />
-          </div>
-          {/* Nav e privacidade em linha */}
-          <div className="flex flex-row flex-wrap justify-between items-start gap-4 text-[12px]">
-            <div className="flex flex-col gap-2">
+          <div className="flex flex-row items-start justify-between gap-4">
+            {/* Logo: lado esquerdo, tamanho controlado para não vazar */}
+            <div className="flex-shrink-0" style={{ maxWidth: "55%" }}>
+              <img
+                src={logo}
+                alt="Oria Partners"
+                width={720}
+                height={480}
+                className="block h-auto"
+                style={{ width: "100%", maxWidth: "160px" }}
+              />
+            </div>
+            {/* Links: lado direito */}
+            <div className="flex flex-col items-end gap-2 text-[11px] pt-1">
               {NAV_LINKS.map((link) => (
                 <a
                   key={link.href}
@@ -71,13 +68,13 @@ export const Footer = () => {
                   {link.label}
                 </a>
               ))}
+              <Link
+                to="/privacidade"
+                className="mt-2 hover:text-background transition-colors underline underline-offset-4"
+              >
+                {UI.footer.privacy}
+              </Link>
             </div>
-            <Link
-              to="/privacidade"
-              className="hover:text-background transition-colors underline underline-offset-4"
-            >
-              {UI.footer.privacy}
-            </Link>
           </div>
         </div>
 

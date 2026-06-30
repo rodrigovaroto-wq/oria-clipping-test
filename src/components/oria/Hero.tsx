@@ -47,27 +47,18 @@ export const Hero = () => {
     >
       <div className="max-w-full">
         {/*
-          Mobile: 1.35rem + 3pts ≈ 1.54rem (~24.6px)
+          Mobile: 1.54rem * 1.20 = ~1.85rem
           Desktop: inalterado (2.2rem / 2.7rem)
-          whiteSpace: pre-line para respeitar as quebras de linha do texto
         */}
         <h1
-          className="font-bold tracking-[-0.025em] text-white animate-fade-up [animation-delay:.2s] w-full md:max-w-[90%] text-[1.54rem] md:text-[2.2rem] lg:text-[2.7rem]"
+          className="font-bold tracking-[-0.025em] text-white animate-fade-up [animation-delay:.2s] w-full md:max-w-[90%] text-[1.85rem] md:text-[2.2rem] lg:text-[2.7rem]"
           style={{ lineHeight: 1.18, marginBottom: "14px", wordBreak: "normal", overflowWrap: "break-word", hyphens: "none", fontWeight: 700 }}
         >
-          {/*
-            L1: Especialistas em Reestruturação
-            L2: Corporativa, contemplando
-            L3: reorganização administrativa,
-            L4: financeira, operacional ou
-            L5: societária de empresas
-            Usamos <br /> explícitos no mobile; desktop usa max-width para quebrar naturalmente
-          */}
           <span className="md:hidden">
             Especialistas em Reestruturação<br />
             Corporativa, contemplando<br />
             <em className="not-italic">reorganização administrativa,</em><br />
-            <em className="not-italic">financeira, operacional ou </em><br />
+            <em className="not-italic">financeira, operacional ou&#160;</em><br />
             <em className="not-italic">societária de empresas</em>
           </span>
           <span className="hidden md:inline">
@@ -83,8 +74,7 @@ export const Hero = () => {
           </span>
         </h1>
 
-        {/* Eyebrow: abaixo do h1, fonte = 60% do tamanho do headline mobile */}
-        {/* mobile headline = 1.54rem → eyebrow = ~0.925rem */}
+        {/* Eyebrow: ~60% do tamanho do headline mobile */}
         <div
           className="flex font-mono-label text-[#F0EDE6] items-center gap-3 animate-fade-up [animation-delay:.3s]"
           style={{

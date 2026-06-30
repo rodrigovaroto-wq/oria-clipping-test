@@ -16,8 +16,7 @@ export const NoticiasHome = () => {
   const cta = lang === "en" ? "View all news" : "Ver todas as notícias";
 
   return (
-    {/* pb reduzido pela metade: era py-20 md:py-28, agora mantemos pt e cortamos pb */}
-    <section id="noticias" className="bg-background pt-20 md:pt-28 pb-10 md:pb-14">
+    <section id="noticias" className="bg-background pt-20 md:pt-28 pb-5 md:pb-7">
       <div className="container-oria">
         <div className="mb-12 reveal max-w-[820px]">
           <div className="font-mono-label text-[11px] text-muted mb-5">{label}</div>
@@ -28,7 +27,6 @@ export const NoticiasHome = () => {
 
         <NoticiasCarousel posts={posts} />
 
-        {/* mt reduzido pela metade: era mt-14, agora mt-7 */}
         <div className="mt-7 flex justify-center">
           <Link to="/noticias" className="btn-primary">
             {cta}

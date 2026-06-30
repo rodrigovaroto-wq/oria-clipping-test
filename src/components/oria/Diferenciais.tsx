@@ -66,12 +66,12 @@ const HoverCard = ({
         strokeWidth={1.5}
       />
     </div>
-    {/* Hover layer */}
+    {/* Hover layer: texto interno +5% → 14px→14.7px, 15px→15.75px */}
     <div
       className="absolute inset-0 z-20 flex items-center justify-center p-4 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
       style={{ backgroundColor: "#11161D" }}
     >
-      <p className="text-[14px] md:text-[15px] leading-[1.5]" style={{ color: "#F6F4EE" }}>
+      <p className="leading-[1.5]" style={{ color: "#F6F4EE", fontSize: "clamp(14.7px, 1.55vw, 15.75px)" }}>
         {resolveDesc(title, desc)}
       </p>
     </div>
