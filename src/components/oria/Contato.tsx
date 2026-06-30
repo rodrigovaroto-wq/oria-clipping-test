@@ -66,12 +66,18 @@ export const Contato = () => {
   const labelCls = "font-mono-label text-[10px] text-background/50 block mb-2";
 
   return (
+    {/*
+      pt aumentado para dar mais espaço entre início da seção e o tópico Contato.
+      pb aumentado levemente para afastar o botão do rodapé.
+    */}
     <section id="contato" className="bg-foreground text-background">
-      <div className="container-oria py-24 md:py-32">
+      <div className="container-oria py-32 md:py-40 pb-32 md:pb-40">
+        {/* Tópico "Contato" alinhado à esquerda */}
+        <div className="font-mono-label text-[10px] text-background/50 mb-6 text-left">
+          {UI.contato.label}
+        </div>
+        {/* Título e demais elementos centralizados */}
         <div className="max-w-[760px] mx-auto text-center mb-20 md:mb-24">
-          <div className="font-mono-label text-[10px] text-background/50 mb-6">
-            {UI.contato.label}
-          </div>
           <h2 className="font-serif-display font-light leading-[1.05] tracking-[-0.025em] mb-6 text-[clamp(30px,3.4vw,44px)]">
             {UI.contato.headingA}
             <em className="italic text-accent-soft font-light">{UI.contato.headingB}</em>
@@ -145,7 +151,6 @@ export const Contato = () => {
                 noValidate
                 className="border-t border-background/20 pt-10 grid sm:grid-cols-2 gap-x-8 gap-y-6"
               >
-                {/* Campo oculto obrigatório para o Netlify detectar o form */}
                 <input type="hidden" name="form-name" value="contato" />
                 <p style={{ display: "none" }}>
                   <label>Não preencha: <input name="bot-field" /></label>
@@ -168,7 +173,7 @@ export const Contato = () => {
                 </div>
                 <div>
                   <label className={labelCls}>{UI.contato.phoneOpt}</label>
-<input name="telefone" maxLength={40} className={inputCls} placeholder={UI.contato.placeholderPhone} />
+                  <input name="telefone" maxLength={40} className={inputCls} placeholder={UI.contato.placeholderPhone} />
                 </div>
                 <div className="sm:col-span-2">
                   <label className={labelCls}>{UI.contato.message}</label>
@@ -180,7 +185,8 @@ export const Contato = () => {
                   />
                   {errors.mensagem && <p className="text-[12px] text-accent-soft mt-2">{errors.mensagem}</p>}
                 </div>
-                <div className="sm:col-span-2 pt-2">
+                {/* pb-8 para afastar o botão do rodapé */}
+                <div className="sm:col-span-2 pt-2 pb-8">
                   <button type="submit" disabled={submitting} className="btn-inverted">
                     {submitting ? "Enviando..." : UI.contato.submit}
                     <ArrowRight />

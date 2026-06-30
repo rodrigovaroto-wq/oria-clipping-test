@@ -16,7 +16,8 @@ export const NoticiasHome = () => {
   const cta = lang === "en" ? "View all news" : "Ver todas as notícias";
 
   return (
-    <section id="noticias" className="bg-background py-20 md:py-28">
+    {/* pb reduzido pela metade: era py-20 md:py-28, agora mantemos pt e cortamos pb */}
+    <section id="noticias" className="bg-background pt-20 md:pt-28 pb-10 md:pb-14">
       <div className="container-oria">
         <div className="mb-12 reveal max-w-[820px]">
           <div className="font-mono-label text-[11px] text-muted mb-5">{label}</div>
@@ -27,7 +28,8 @@ export const NoticiasHome = () => {
 
         <NoticiasCarousel posts={posts} />
 
-        <div className="mt-14 flex justify-center">
+        {/* mt reduzido pela metade: era mt-14, agora mt-7 */}
+        <div className="mt-7 flex justify-center">
           <Link to="/noticias" className="btn-primary">
             {cta}
           </Link>
@@ -36,8 +38,6 @@ export const NoticiasHome = () => {
     </section>
   );
 };
-
-// ─── Carousel ────────────────────────────────────────────────────────────────
 
 function NoticiasCarousel({ posts }: { posts: ReturnType<typeof getAllPosts> }) {
   const VISIBLE_DESKTOP = 3;
@@ -61,7 +61,6 @@ function NoticiasCarousel({ posts }: { posts: ReturnType<typeof getAllPosts> }) 
     setIndex((i) => (i - 1 + total) % total);
   }, [total]);
 
-  // Detect mobile
   useEffect(() => {
     const mq = window.matchMedia("(max-width: 767px)");
     setIsMobile(mq.matches);
@@ -70,7 +69,6 @@ function NoticiasCarousel({ posts }: { posts: ReturnType<typeof getAllPosts> }) 
     return () => mq.removeEventListener("change", handler);
   }, []);
 
-  // Autoplay
   const startTimer = useCallback(() => {
     if (timerRef.current) clearInterval(timerRef.current);
     timerRef.current = setInterval(next, AUTOPLAY_MS);
@@ -103,9 +101,7 @@ function NoticiasCarousel({ posts }: { posts: ReturnType<typeof getAllPosts> }) 
 
   return (
     <div ref={sectionRef} className="relative reveal">
-      {/* Layout: seta esquerda + cards + seta direita */}
       <div className="flex items-center gap-3 md:gap-4">
-        {/* Seta esquerda */}
         <button
           type="button"
           onClick={prev}
@@ -117,14 +113,12 @@ function NoticiasCarousel({ posts }: { posts: ReturnType<typeof getAllPosts> }) 
           </svg>
         </button>
 
-        {/* Cards */}
         <div className="flex-1 grid gap-4 md:gap-6 grid-cols-1 md:grid-cols-3">
           {visiblePosts.map((p, i) => (
             <NoticiaCard key={`${p.slug}-${index}-${i}`} post={p} />
           ))}
         </div>
 
-        {/* Seta direita */}
         <button
           type="button"
           onClick={next}
