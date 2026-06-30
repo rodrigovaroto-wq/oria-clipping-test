@@ -67,12 +67,14 @@ export const Contato = () => {
 
   return (
     <section id="contato" className="bg-foreground text-background">
-      <div className="container-oria pt-40 md:pt-48 pb-32 md:pb-40">
-        {/* Tópico Contato: à esquerda, com margem inferior generosa antes do bloco centralizado */}
+      {/*
+        Desktop (md+): pt-40 * 0.30 = pt-12 (~48px)
+        Mobile: pt-48 mantido e aumentado levemente para pt-56
+      */}
+      <div className="container-oria pt-56 md:pt-12 pb-32 md:pb-40">
         <div className="font-mono-label text-[10px] text-background/50 mb-12 text-left">
           {UI.contato.label}
         </div>
-        {/* Título e demais elementos centralizados */}
         <div className="max-w-[760px] mx-auto text-center mb-20 md:mb-24">
           <h2 className="font-serif-display font-light leading-[1.05] tracking-[-0.025em] mb-6 text-[clamp(30px,3.4vw,44px)]">
             {UI.contato.headingA}
@@ -151,7 +153,6 @@ export const Contato = () => {
                 <p style={{ display: "none" }}>
                   <label>Não preencha: <input name="bot-field" /></label>
                 </p>
-
                 <div>
                   <label className={labelCls}>{UI.contato.name}</label>
                   <input name="nome" maxLength={100} className={inputCls} placeholder={UI.contato.placeholderName} />

@@ -43,21 +43,19 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* ── MOBILE: layout totalmente responsivo ── */}
+        {/* ── MOBILE: logo 160px * 1.20 = 192px ── */}
         <div className="md:hidden pb-6 border-b border-background/12">
           <div className="flex flex-row items-start justify-between gap-4">
-            {/* Logo: lado esquerdo, tamanho controlado para não vazar */}
-            <div className="flex-shrink-0" style={{ maxWidth: "55%" }}>
+            <div className="flex-shrink-0" style={{ maxWidth: "60%" }}>
               <img
                 src={logo}
                 alt="Oria Partners"
                 width={720}
                 height={480}
                 className="block h-auto"
-                style={{ width: "100%", maxWidth: "160px" }}
+                style={{ width: "100%", maxWidth: "192px" }}
               />
             </div>
-            {/* Links: lado direito */}
             <div className="flex flex-col items-end gap-2 text-[11px] pt-1">
               {NAV_LINKS.map((link) => (
                 <a
@@ -78,7 +76,6 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* Linha inferior: copyright */}
         <div className="pt-4">
           <span>© {new Date().getFullYear()} Oria Partners. {UI.footer.rights}</span>
         </div>
