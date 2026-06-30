@@ -46,19 +46,10 @@ export const Hero = () => {
       }}
     >
       <div className="max-w-full">
-        {/* MOBILE: eyebrow primeiro (acima do h1), com fonte menor */}
-        <div
-          className="md:hidden font-mono-label text-[#F0EDE6] flex items-center gap-3 animate-fade-up [animation-delay:.1s]"
-          style={{ fontSize: "0.62rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "14px" }}
-        >
-          <span className="block w-6 h-px bg-[#F0EDE6]" />
-          {UI.hero.eyebrow}
-        </div>
-
-        {/* h1: mobile maior (2rem), desktop inalterado */}
+        {/* h1: mobile com font menor e sem max-width para ocupar toda largura */}
         <h1
-          className="font-bold tracking-[-0.025em] text-white animate-fade-up [animation-delay:.2s] max-w-full md:max-w-[90%] text-[2rem] md:text-[2.2rem] lg:text-[2.7rem]"
-          style={{ lineHeight: 1.12, marginBottom: "20px", wordBreak: "normal", overflowWrap: "break-word", hyphens: "none", fontWeight: 700, whiteSpace: "pre-line" }}
+          className="font-bold tracking-[-0.025em] text-white animate-fade-up [animation-delay:.2s] max-w-full md:max-w-[90%] text-[1.35rem] md:text-[2.2rem] lg:text-[2.7rem]"
+          style={{ lineHeight: 1.2, marginBottom: "20px", wordBreak: "normal", overflowWrap: "break-word", hyphens: "none", fontWeight: 700, whiteSpace: "pre-line" }}
         >
           {UI.hero.h1Lines.map((line, i) => (
             <span key={i}>
@@ -71,11 +62,11 @@ export const Hero = () => {
           ))}
         </h1>
 
-        {/* DESKTOP: eyebrow abaixo do h1 (posição original) */}
-        <div className="hidden md:flex font-mono-label text-[#F0EDE6] items-center gap-4 animate-fade-up [animation-delay:.3s]"
-          style={{ fontSize: "0.75rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "32px" }}
+        {/* Eyebrow: abaixo do h1 em ambos mobile e desktop (posição original) */}
+        <div className="flex font-mono-label text-[#F0EDE6] items-center gap-3 animate-fade-up [animation-delay:.3s]"
+          style={{ fontSize: "0.68rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "32px" }}
         >
-          <span className="block w-8 h-px bg-[#F0EDE6]" />
+          <span className="block w-6 h-px bg-[#F0EDE6] md:w-8" />
           {UI.hero.eyebrow}
         </div>
 

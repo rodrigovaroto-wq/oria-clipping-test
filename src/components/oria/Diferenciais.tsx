@@ -15,21 +15,19 @@ import {
 const PILAR_ICONS: LucideIcon[] = [Handshake, Network, Eye, Layers, Settings2, Timer];
 const INEG_ICONS: LucideIcon[] = [Ban, Sparkles, ShieldCheck];
 
-// Textos encurtados para caber inteiro no card sem scroll
 const SHORT_DESCS: Record<string, string> = {
-  // PT
   "Coordenação e disciplina":
     "Situações com múltiplos stakeholders exigem método e clareza. Estruturamos negociações com disciplina operacional, comunicação transparente e alinhamento contínuo mesmo sob alta pressão.",
   "Disciplined coordination":
     "Complex situations require method and clarity. We structure negotiations with operational discipline, transparent communication and continuous alignment even under high pressure.",
   "Clareza antes da narrativa":
-    "Construímos uma visão objetiva e tecnicamente consistente da situação. Não operamos por otimismo artificial nem alarmismo — apenas compreensão precisa dos fatos, riscos e alternativas.",
+    "Construímos uma visão objetiva e tecnicamente consistente. Não operamos por otimismo artificial nem alarmismo — apenas compreensão precisa dos fatos, riscos e alternativas.",
   "Clarity before narrative":
-    "We build an objective, technically consistent view of the situation — not on artificial optimism nor alarmism, but on precise understanding of facts, risks and alternatives.",
+    "We build an objective, technically consistent view — not on artificial optimism nor alarmism, but on precise understanding of facts, risks and alternatives.",
   "Da operação à negociação":
-    "Toda reestruturação sustentável começa pela operação. Identificamos a origem dos problemas e estruturamos soluções compatíveis com a realidade operacional — não com modelos pré-formatados.",
+    "Toda reestruturação sustentável começa pela operação. Identificamos a origem dos problemas e estruturamos soluções compatíveis com a realidade operacional.",
   "From operations to negotiation":
-    "Every sustainable restructuring begins with the operation. We identify root causes and structure solutions that fit the company's operational reality, not pre-formatted templates.",
+    "Every sustainable restructuring begins with the operation. We identify root causes and structure solutions that fit the company's actual operational reality.",
   "Viabilidade com senso de urgência":
     "Em situações de estresse, tempo é parte da solução. Atuamos com profundidade técnica para evitar decisões frágeis, sempre respeitando o timing crítico de cada processo.",
   "Feasibility with a sense of urgency":
@@ -59,12 +57,12 @@ const HoverCard = ({
   >
     {/* Default state */}
     <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 p-4 text-center transition-opacity duration-300 group-hover:opacity-0">
-      <h3 className="text-[19px] md:text-[20px] font-medium leading-snug text-foreground">
+      <h3 className="text-[16px] md:text-[18px] font-medium leading-snug text-foreground">
         {title}
       </h3>
       <Icon
         aria-hidden="true"
-        style={{ width: 56, height: 56, color: "#C0492E", opacity: 1 }}
+        style={{ width: 48, height: 48, color: "#C0492E", opacity: 1 }}
         strokeWidth={1.5}
       />
     </div>
@@ -73,7 +71,7 @@ const HoverCard = ({
       className="absolute inset-0 z-20 flex items-center justify-center p-4 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
       style={{ backgroundColor: "#11161D" }}
     >
-      <p className="text-[16px] leading-[1.5]" style={{ color: "#F6F4EE" }}>
+      <p className="text-[14px] md:text-[15px] leading-[1.5]" style={{ color: "#F6F4EE" }}>
         {resolveDesc(title, desc)}
       </p>
     </div>

@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { useContent } from "@/data/oria";
 
-const useCountUp = (target: number, duration = 1500, start = false) => {
+// duration aumentado em 30% (1500 → 1950ms)
+const useCountUp = (target: number, duration = 1950, start = false) => {
   const [value, setValue] = useState(0);
   useEffect(() => {
     if (!start) return;
@@ -69,7 +70,7 @@ const NumeroItem = ({
   item: { prefix: string; value: number; suffix: string; label: string };
   start: boolean;
 }) => {
-  const v = useCountUp(item.value, 1500, start);
+  const v = useCountUp(item.value, 1950, start);
   return (
     <div className="flex flex-col items-center max-w-[280px]">
       <div className="font-bold leading-none tracking-tight text-[clamp(44px,5.5vw,68px)] mb-2" style={{ color: "#F6F4EE" }}>
@@ -84,4 +85,3 @@ const NumeroItem = ({
     </div>
   );
 };
-
