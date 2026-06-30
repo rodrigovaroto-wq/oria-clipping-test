@@ -1,0 +1,15 @@
+---
+title: "T4F marca data de seu “último show” na B3"
+slug: "t4f-marca-data-de-seu-ultimo-show-na-b3"
+description: "A T4F, uma das principais empresas de entretenimento da América Latina, anunciou a realização de uma oferta pública de aquisição (OPA) de suas ações, programada para o dia 20 de julho."
+summary_full: "A T4F, uma das principais empresas de entretenimento da América Latina, anunciou a realização de uma oferta pública de aquisição (OPA) de suas ações, programada para o dia 20 de julho. O fundador e controlador, Fernando Luiz Alterio, pretende adquirir 3.353.850 ações, o que representa 49,75% do capital social da empresa, a um preço de R$ 5,59 por ação, que pode ser ajustado para R$ 5,97 com a correção pela Selic. Para concretizar a operação e fechar o capital da companhia, Alterio precisará investir pelo menos R$ 20 milhões. A decisão de sair da B3 foi justificada por ele em função dos altos custos de manutenção e da falta de perspectivas de liquidez e oportunidades de investimento no mercado de capitais brasileiro. Desde sua abertura de capital em 2011, as ações da T4F desvalorizaram 63%. No primeiro trimestre de 2026, a empresa reportou receita líquida de R$ 33,1 milhões e um prejuízo de R$ 4,1 milhões. A T4F é a mais recente entre várias empresas que optaram por deixar a bolsa, seguindo um movimento que inclui outras companhias como Gol e Eletromídia. A saída da T4F da B3 sinaliza uma tendência de desinvestimento no mercado de capitais brasileiro, especialmente entre empresas que enfrentam dificuldades financeiras."
+date: "2026-06-30"
+category: "governanca"
+source_name: "NeoFeed"
+source_url: "https://neofeed.com.br/negocios/t4f-marca-data-de-seu-ultimo-show-na-b3/"
+image: "https://neofeed.com.br/wp-content/uploads/2026/04/show-t4f.jpg"
+---
+
+A T4F, uma das principais empresas de entretenimento da América Latina, anunciou a realização de uma oferta pública de aquisição (OPA) de suas ações, programada para o dia 20 de julho. O fundador e controlador, Fernando Luiz Alterio, pretende adquirir 3.353.850 ações, o que representa 49,75% do capital social da empresa, a um preço de R$ 5,59 por ação, que pode ser ajustado para R$ 5,97 com a correção pela Selic. Para concretizar a operação e fechar o capital da companhia, Alterio precisará investir pelo menos R$ 20 milhões. A decisão de sair da B3 foi justificada por ele em função dos altos custos de manutenção e da falta de perspectivas de liquidez e oportunidades de investimento no mercado de capitais brasileiro. Desde sua abertura de capital em 2011, as ações da T4F desvalorizaram 63%. No primeiro trimestre de 2026, a empresa reportou receita líquida de R$ 33,1 milhões e um prejuízo de R$ 4,1 milhões. A T4F é a mais recente entre várias empresas que optaram por deixar a bolsa, seguindo um movimento que inclui outras companhias como Gol e Eletromídia. A saída da T4F da B3 sinaliza uma tendência de desinvestimento no mercado de capitais brasileiro, especialmente entre empresas que enfrentam dificuldades financeiras.
+
+Fonte: [NeoFeed](https://neofeed.com.br/negocios/t4f-marca-data-de-seu-ultimo-show-na-b3/)
