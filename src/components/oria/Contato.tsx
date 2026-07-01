@@ -71,7 +71,7 @@ export const Contato = () => {
         Desktop (md+): pt-40 * 0.30 = pt-12 (~48px)
         Mobile: pt-48 mantido e aumentado levemente para pt-56
       */}
-      <div className="container-oria pt-56 md:pt-12 pb-32 md:pb-40">
+      <div className="container-oria pt-60 md:pt-12 pb-32 md:pb-40">
         <div className="font-mono-label text-[10px] text-background/50 mb-12 text-left">
           {UI.contato.label}
         </div>
