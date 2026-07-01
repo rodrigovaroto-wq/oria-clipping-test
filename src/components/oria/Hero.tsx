@@ -51,7 +51,7 @@ export const Hero = () => {
           Desktop: inalterado (2.2rem / 2.7rem)
         */}
         <h1
-          className="font-bold tracking-[-0.025em] text-white animate-fade-up [animation-delay:.2s] w-full md:max-w-[90%] text-[1.85rem] md:text-[2.2rem] lg:text-[2.7rem]"
+          className="font-bold tracking-[-0.025em] text-white animate-fade-up [animation-delay:.2s] w-full md:max-w-[90%] text-[1.65rem] md:text-[2rem] lg:text-[2.5rem]"
           style={{ lineHeight: 1.18, marginBottom: "14px", wordBreak: "normal", overflowWrap: "break-word", hyphens: "none", fontWeight: 700 }}
         >
           <span className="md:hidden">
