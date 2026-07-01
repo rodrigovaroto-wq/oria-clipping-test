@@ -93,7 +93,7 @@ export const Contato = () => {
             <div className="w-full h-full min-h-[360px] lg:min-h-[560px]">
               <iframe
                 title={UI.contato.mapTitle}
-                src="https://www.google.com/maps?q=RUA+DO+ROCIO+288+VILA+OLIMPIA+SAO+PAULO+SP&hl=pt-BR&output=embed&z=16"
+                src="https://www.google.com/maps?q=Rua+do+Rocio,+288,+Vila+Ol%C3%ADmpia,+S%C3%A3o+Paulo,+SP,+04552-010&output=embed&z=16"
                 width="100%"
                 height="100%"
                 style={{ border: 0, borderRadius: "12px" }}
