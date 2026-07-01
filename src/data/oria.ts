@@ -506,7 +506,7 @@ export const UI = {
       metodoHeadingB: "disciplina mesmo sob pressão.",
     },
     contato: {
-      label: ".\n.\nCONTATO",
+      label: "CONTATO",
       headingA: "Situações complexas exigem priorização, estabilização e ",
       headingB: "planejamento.",
       lead: "Décadas combinadas em reestruturação, M&A e mercado de capitais, com passagens por bancos de investimento, áreas de crédito estruturado, financiamento a projetos e assessoria financeira. Operações de complexidade relevante em indústria, varejo, infraestrutura e serviços.",
@@ -714,7 +714,7 @@ export const UI = {
       metodoHeadingB: "discipline, even under pressure.",
     },
     contato: {
-      label: ".\n.\nCONTATO",
+      label: "CONTATO",
       headingA: "Complex situations require prioritization, stabilization and ",
       headingB: "planning.",
       lead: "Decades of combined experience in restructuring, M&A and capital markets, including stints at investment banks, structured credit desks, project finance and financial advisory. Transactions of significant complexity across industrial, retail, infrastructure and services sectors.",
