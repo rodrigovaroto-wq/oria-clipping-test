@@ -68,10 +68,10 @@ export const Contato = () => {
   return (
     <section id="contato" className="bg-foreground text-background">
       {/*
-        Desktop (md+): pt-40 * 0.30 = pt-12 (~48px)
-        Mobile: pt-48 mantido e aumentado levemente para pt-56
+        Desktop (md+): pt-12 (~48px)
+        Mobile: aumentado para pt-72 (~288px) para dar mais respiro entre o topo da seção e o label "Contato"
       */}
-      <div className="container-oria pt-56 md:pt-12 pb-32 md:pb-40">
+      <div className="container-oria pt-72 md:pt-12 pb-32 md:pb-40">
         <div className="font-mono-label text-[10px] text-background/50 mb-12 text-left">
           {UI.contato.label}
         </div>
