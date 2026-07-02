@@ -1,0 +1,15 @@
+---
+title: "Fundo imobiliário investe R$ 150 milhões na compra de imóveis no Rio de Janeiro e SP; IFIX recua"
+slug: "fundo-imobiliario-investe-r-150-milhoes-na-compra-de-imoveis-no-rio-de"
+description: "O fundo imobiliário Pátria Renda Urbana (HGRU11) anunciou a aquisição de seis imóveis localizados no Rio de Janeiro e em São Paulo, totalizando aproximadamente R$ 150,4 milhões."
+summary_full: "O fundo imobiliário Pátria Renda Urbana (HGRU11) anunciou a aquisição de seis imóveis localizados no Rio de Janeiro e em São Paulo, totalizando aproximadamente R$ 150,4 milhões. A primeira transação envolve a compra de cinco empreendimentos comerciais no Leblon, no Rio de Janeiro, por R$ 100,4 milhões, com uma área bruta locável (ABL) de cerca de 4,1 mil metros quadrados. Esses ativos já estão locados para empresas do varejo e foram adquiridos com um cap rate de 9,4% ao ano. O pagamento foi realizado com R$ 6,1 milhões em dinheiro e R$ 94,3 milhões em compensação de créditos relacionados à subscrição de cotas da 6ª emissão do fundo. A transferência definitiva da propriedade depende do cumprimento de algumas condições, incluindo a quitação de dívidas sobre os empreendimentos. A segunda operação refere-se à compra de um imóvel em São Bernardo do Campo (SP) por R$ 50 milhões, que possui 10,5 mil metros quadrados de ABL e já está alugado para o Grupo Ânima. O pagamento também foi feito por meio de compensação de créditos. Após essas transações, o IFIX, índice de referência do setor, apresentou uma leve queda de 0,10%."
+date: "2026-07-02"
+category: "desinvestimento"
+source_name: "Money Times"
+source_url: "https://www.moneytimes.com.br/fundo-imobiliario-investe-r-150-milhoes-na-compra-de-imoveis-no-rio-de-janeiro-e-sp-ifix-recua-igdl/"
+image: "https://www.moneytimes.com.br/uploads/2026/07/image-7-300x179.png"
+---
+
+O fundo imobiliário Pátria Renda Urbana (HGRU11) anunciou a aquisição de seis imóveis localizados no Rio de Janeiro e em São Paulo, totalizando aproximadamente R$ 150,4 milhões. A primeira transação envolve a compra de cinco empreendimentos comerciais no Leblon, no Rio de Janeiro, por R$ 100,4 milhões, com uma área bruta locável (ABL) de cerca de 4,1 mil metros quadrados. Esses ativos já estão locados para empresas do varejo e foram adquiridos com um cap rate de 9,4% ao ano. O pagamento foi realizado com R$ 6,1 milhões em dinheiro e R$ 94,3 milhões em compensação de créditos relacionados à subscrição de cotas da 6ª emissão do fundo. A transferência definitiva da propriedade depende do cumprimento de algumas condições, incluindo a quitação de dívidas sobre os empreendimentos. A segunda operação refere-se à compra de um imóvel em São Bernardo do Campo (SP) por R$ 50 milhões, que possui 10,5 mil metros quadrados de ABL e já está alugado para o Grupo Ânima. O pagamento também foi feito por meio de compensação de créditos. Após essas transações, o IFIX, índice de referência do setor, apresentou uma leve queda de 0,10%.
+
+Fonte: [Money Times](https://www.moneytimes.com.br/fundo-imobiliario-investe-r-150-milhoes-na-compra-de-imoveis-no-rio-de-janeiro-e-sp-ifix-recua-igdl/)
