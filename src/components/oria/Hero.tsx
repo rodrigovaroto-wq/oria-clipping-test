@@ -14,9 +14,7 @@ export const Hero = () => {
     v.setAttribute("webkit-playsinline", "");
     const attempt = () => {
       const p = v.play();
-      if (p !== undefined) {
-        p.catch(() => {});
-      }
+      if (p !== undefined) p.catch(() => {});
     };
     if (v.readyState >= 2) {
       attempt();
@@ -26,24 +24,20 @@ export const Hero = () => {
     return () => v.removeEventListener("canplay", attempt);
   }, []);
 
-  const headlineStyle: React.CSSProperties = {
+  const headlineBase: React.CSSProperties = {
     textWrap: "unset" as never,
     overflowWrap: "normal",
     wordBreak: "normal",
     hyphens: "none",
     whiteSpace: "normal",
+    display: "block",
   };
 
   return (
     <section
       id="hero"
       className="hero relative overflow-hidden w-full flex flex-col justify-center"
-      style={{
-        height: "100dvh",
-        minHeight: "100dvh",
-        maxHeight: "100dvh",
-        backgroundColor: "#000",
-      }}
+      style={{ height: "100dvh", minHeight: "100dvh", maxHeight: "100dvh", backgroundColor: "#000" }}
     >
       <video
         ref={videoRef}
@@ -56,15 +50,7 @@ export const Hero = () => {
         aria-hidden="true"
         tabIndex={-1}
         className="pointer-events-none absolute"
-        style={{
-          zIndex: 0,
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "115%",
-          objectFit: "cover",
-          objectPosition: "top center",
-        }}
+        style={{ zIndex: 0, top: 0, left: 0, width: "100%", height: "115%", objectFit: "cover", objectPosition: "top center" }}
       >
         <source src="/hero-bg.webm" type="video/webm" />
         <source src="/hero-bg.mp4" type="video/mp4" />
@@ -76,18 +62,16 @@ export const Hero = () => {
       >
         <div className="max-w-full">
           <h1
-            className="font-bold tracking-[-0.025em] text-white animate-fade-up [animation-delay:.2s] w-full md:max-w-[90%]"
-            style={{
-              lineHeight: 1.18,
-              marginBottom: "14px",
-              fontWeight: 700,
-              textWrap: "unset" as never,
-            }}
+            className="font-bold tracking-[-0.025em] text-white animate-fade-up [animation-delay:.2s] w-full"
+            style={{ lineHeight: 1.18, marginBottom: "14px", fontWeight: 700, textWrap: "unset" as never }}
           >
-            {/* MOBILE — 1.44rem (era 1.51rem, -1pt) */}
+            {/* MOBILE — oculto a partir de 768px */}
             <span
-              className="md:hidden"
-              style={{ ...headlineStyle, fontSize: "1.44rem", display: "block" }}
+              style={{
+                ...headlineBase,
+                fontSize: "1.44rem",
+              }}
+              className="md:!hidden"
             >
               Especialistas em Reestruturação<br />
               Corporativa, contemplando<br />
@@ -96,10 +80,14 @@ export const Hero = () => {
               societária de empresas
             </span>
 
-            {/* DESKTOP */}
+            {/* DESKTOP — visível somente a partir de 768px */}
             <span
-              className="hidden md:block"
-              style={{ ...headlineStyle, fontSize: "clamp(2.35rem, 3.2vw, 2.85rem)" }}
+              style={{
+                ...headlineBase,
+                fontSize: "clamp(2.35rem, 3.2vw, 2.85rem)",
+                display: "none",
+              }}
+              className="md:!block"
             >
               Especialistas em Reestruturação<br />
               Corporativa, contemplando reorganização<br />
@@ -110,12 +98,7 @@ export const Hero = () => {
 
           <div
             className="flex font-mono-label text-[#F0EDE6] items-center gap-3 animate-fade-up [animation-delay:.3s]"
-            style={{
-              fontSize: "clamp(0.58rem, 1.4vw, 0.75rem)",
-              letterSpacing: "0.15em",
-              textTransform: "uppercase",
-              marginBottom: "28px",
-            }}
+            style={{ fontSize: "clamp(0.58rem, 1.4vw, 0.75rem)", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "28px" }}
           >
             <span className="block w-6 h-px bg-[#F0EDE6] md:w-8" />
             {UI.hero.eyebrow}
