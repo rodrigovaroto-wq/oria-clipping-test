@@ -1,0 +1,15 @@
+---
+title: "Com o balanço por um fio, Lime vale US$ 1,6 bilhão em IPO do patinete"
+slug: "com-o-balanco-por-um-fio-lime-vale-us-16-bilhao-em-ipo-do-patinete"
+description: "A Lime, startup americana de aluguel de patinetes e bicicletas elétricas, abriu seu capital na Nasdaq, levantando US$ 174 milhões ao vender cerca de 7 milhões de ações a US$ 25 cada."
+summary_full: "A Lime, startup americana de aluguel de patinetes e bicicletas elétricas, abriu seu capital na Nasdaq, levantando US$ 174 milhões ao vender cerca de 7 milhões de ações a US$ 25 cada. Com isso, a empresa alcançou um valor de mercado de aproximadamente US$ 1,6 bilhão. No prospecto, a Lime expressou \"dúvidas substanciais\" sobre sua capacidade de continuar operando sem novas fontes de financiamento, destacando a urgência em liquidar parte de seus passivos que totalizam US$ 1 bilhão, dos quais mais da metade vence até o fim do ano. O cenário desafiador do setor de micromobilidade é evidenciado pela recuperação judicial da Bird em 2023 e pela fusão das europeias Tier e Dott. Fundada em 2017, a Lime se tornou unicórnio em um ano e, após dificuldades operacionais, voltou a expandir suas operações em 230 cidades ao redor do mundo. No último ano, a empresa faturou US$ 886,7 milhões, mas registrou um prejuízo de US$ 59,3 milhões. O Uber, principal investidor da Lime, detinha 24% da empresa e será diluído para 22% após o IPO. A situação da Lime pode sinalizar a necessidade de reavaliação das estratégias de financiamento e operação no setor de micromobilidade."
+date: "2026-07-02"
+category: "captacao"
+source_name: "Brazil Journal"
+source_url: "https://braziljournal.com/com-o-balanco-por-um-fio-lime-vale-us-16-bilhao-em-ipo-do-patinete/"
+image: "https://braziljournal.com/wp-content/uploads/2026/07/Lime-1-635x357.png"
+---
+
+A Lime, startup americana de aluguel de patinetes e bicicletas elétricas, abriu seu capital na Nasdaq, levantando US$ 174 milhões ao vender cerca de 7 milhões de ações a US$ 25 cada. Com isso, a empresa alcançou um valor de mercado de aproximadamente US$ 1,6 bilhão. No prospecto, a Lime expressou "dúvidas substanciais" sobre sua capacidade de continuar operando sem novas fontes de financiamento, destacando a urgência em liquidar parte de seus passivos que totalizam US$ 1 bilhão, dos quais mais da metade vence até o fim do ano. O cenário desafiador do setor de micromobilidade é evidenciado pela recuperação judicial da Bird em 2023 e pela fusão das europeias Tier e Dott. Fundada em 2017, a Lime se tornou unicórnio em um ano e, após dificuldades operacionais, voltou a expandir suas operações em 230 cidades ao redor do mundo. No último ano, a empresa faturou US$ 886,7 milhões, mas registrou um prejuízo de US$ 59,3 milhões. O Uber, principal investidor da Lime, detinha 24% da empresa e será diluído para 22% após o IPO. A situação da Lime pode sinalizar a necessidade de reavaliação das estratégias de financiamento e operação no setor de micromobilidade.
+
+Fonte: [Brazil Journal](https://braziljournal.com/com-o-balanco-por-um-fio-lime-vale-us-16-bilhao-em-ipo-do-patinete/)
