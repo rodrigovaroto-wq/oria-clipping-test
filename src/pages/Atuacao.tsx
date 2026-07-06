@@ -5,6 +5,11 @@ import { Contato } from "@/components/oria/Contato";
 import { useContent } from "@/data/oria";
 import { useSEO } from "@/hooks/useSEO";
 import { useReveal } from "@/hooks/useReveal";
+import { Search, Wallet, RefreshCw, Handshake, Database, Stethoscope, Users, LineChart, type LucideIcon } from "lucide-react";
+
+// Ícones que representam cada frente e cada etapa do método (na ordem do conteúdo)
+const FRENTE_ICONS: LucideIcon[] = [Search, Wallet, RefreshCw, Handshake];
+const METODO_ICONS: LucideIcon[] = [Database, Stethoscope, Users, LineChart];
 
 const SCHEMA_ATUACAO = {
   "@context": "https://schema.org",
@@ -44,24 +49,25 @@ const AtuacaoPage = () => {
         <section className="bg-background py-16 md:py-24">
           <div className="container-oria">
             <SectionHeader
-              num={UI.atuacao.pageNum}
               heading={
                 <>
                   {UI.atuacao.headingA}
-                  <em className="italic text-accent font-light">{UI.atuacao.headingB}</em>
+                  {UI.atuacao.headingB}
                 </>
               }
               intro={UI.atuacao.intro}
             />
 
             <div className="mt-4 md:mt-8 border-t border-rule reveal">
-              {FRENTES.map((f) => (
+              {FRENTES.map((f, i) => {
+                const Icon = FRENTE_ICONS[i % FRENTE_ICONS.length];
+                return (
                 <article
                   key={f.num}
                   className="grid md:grid-cols-[auto_1fr] gap-4 md:gap-14 py-10 md:py-14 border-b border-rule"
                 >
-                  <div className="font-serif-display text-accent font-light leading-none tracking-[-0.03em] text-[clamp(38px,7vw,76px)]">
-                    {f.num}
+                  <div className="md:pt-1">
+                    <Icon aria-hidden strokeWidth={1.5} className="w-9 h-9 md:w-10 md:h-10 text-foreground" />
                   </div>
                   <div className="max-w-[820px]">
                     <h3 className="font-serif-display text-[clamp(22px,4vw,32px)] font-normal leading-[1.15] tracking-[-0.015em] mb-5">
@@ -73,7 +79,8 @@ const AtuacaoPage = () => {
                     <p className="text-[15px] md:text-[15.5px] leading-[1.7] text-ink-soft">{f.desc}</p>
                   </div>
                 </article>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>
@@ -82,11 +89,10 @@ const AtuacaoPage = () => {
           <div className="container-oria">
             <SectionHeader
               invert
-              num={UI.atuacao.metodoNum}
               heading={
                 <>
                   {UI.atuacao.metodoHeadingA}
-                  <em className="italic text-accent-soft font-light">{UI.atuacao.metodoHeadingB}</em>
+                  {UI.atuacao.metodoHeadingB}
                 </>
               }
             />
@@ -94,14 +100,16 @@ const AtuacaoPage = () => {
               className="grid sm:grid-cols-2 gap-x-14 gap-y-10 md:gap-y-14 reveal"
               style={{ borderTop: "1px solid rgba(246,244,238,0.18)" }}
             >
-              {METODO.map((m) => (
+              {METODO.map((m, i) => {
+                const Icon = METODO_ICONS[i % METODO_ICONS.length];
+                return (
                 <article
                   key={m.num}
                   className="pt-8 md:pt-10"
                   style={{ borderTop: "1px solid rgba(246,244,238,0.18)" }}
                 >
-                  <div className="font-serif-display font-light leading-none text-[clamp(26px,3.6vw,38px)] mb-4" style={{ color: "#C0492E" }}>
-                    {m.num}
+                  <div className="mb-5">
+                    <Icon aria-hidden strokeWidth={1.5} className="w-8 h-8" style={{ color: "#F6F4EE" }} />
                   </div>
                   <h3 className="font-serif-display text-[clamp(20px,3vw,26px)] font-normal leading-[1.2] tracking-[-0.015em] mb-3" style={{ color: "#F6F4EE" }}>
                     {m.title}
@@ -110,7 +118,8 @@ const AtuacaoPage = () => {
                     {m.desc}
                   </p>
                 </article>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>

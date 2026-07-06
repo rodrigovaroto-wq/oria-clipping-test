@@ -46,11 +46,10 @@ const CasosPage = () => {
         <section className="bg-background py-16 md:py-24">
           <div className="container-oria">
             <SectionHeader
-              num={UI.casos.num}
               heading={
                 <>
                   {UI.casos.headingA}
-                  <em className="italic text-accent font-light">{UI.casos.headingB}</em>
+                  {UI.casos.headingB}
                 </>
               }
               intro={UI.casos.intro}
@@ -68,7 +67,7 @@ const CasosPage = () => {
                     >
                       <span className="font-mono-label text-[10px] text-accent md:pt-1">{c.tag}</span>
                       <span>
-                        <h3 className={`font-serif-display text-[clamp(18px,4.5vw,25px)] font-normal leading-[1.2] tracking-[-0.01em] transition-colors ${isOpen ? "text-accent" : "group-hover:text-accent"}`}>
+                        <h3 className="font-serif-display text-[clamp(18px,4.5vw,25px)] font-normal leading-[1.2] tracking-[-0.01em] text-foreground transition-opacity group-hover:opacity-70">
                           {c.title}
                         </h3>
                         <span className="mt-2 block font-mono-label text-[10px] text-muted">{c.setor}</span>

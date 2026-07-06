@@ -77,17 +77,6 @@ const SCHEMA_SOCIOS = [
   },
 ];
 
-const toRoman = (n: number) => {
-  const map: [number, string][] = [
-    [1000, "M"], [900, "CM"], [500, "D"], [400, "CD"],
-    [100, "C"], [90, "XC"], [50, "L"], [40, "XL"],
-    [10, "X"], [9, "IX"], [5, "V"], [4, "IV"], [1, "I"],
-  ];
-  let r = "";
-  for (const [v, s] of map) { while (n >= v) { r += s; n -= v; } }
-  return r;
-};
-
 const renderBio = (paragraphs: string[]) =>
   paragraphs.map((p, i) => {
     const parts = p.split(/(\*\*[^*]+\*\*)/g).map((seg, idx) => {
@@ -127,11 +116,10 @@ const SociosPage = () => {
         <section className="bg-background py-16 md:py-24">
           <div className="container-oria">
             <SectionHeader
-              num={UI.socios.num}
               heading={
                 <>
                   {UI.socios.headingA}
-                  <em className="italic text-accent font-light">{UI.socios.headingB}</em>
+                  {UI.socios.headingB}
                 </>
               }
               intro={UI.socios.intro}
@@ -192,12 +180,9 @@ const SociosPage = () => {
                         {s.highlights.map((h, i) => (
                           <li
                             key={i}
-                            className="flex gap-5 py-4 border-b border-rule text-[14.5px] leading-[1.55] text-ink-soft"
+                            className="py-4 border-b border-rule text-[14.5px] leading-[1.55] text-ink-soft"
                           >
-                            <span className="font-mono text-[10px] text-accent tracking-[0.15em] w-6 shrink-0 pt-1">
-                              {toRoman(i + 1)}
-                            </span>
-                            <span>{h}</span>
+                            {h}
                           </li>
                         ))}
                       </ul>
