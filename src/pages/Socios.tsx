@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Nav } from "@/components/oria/Nav";
 import { Footer } from "@/components/oria/Footer";
 import { SectionHeader } from "@/components/oria/SectionHeader";
@@ -6,6 +5,14 @@ import { Contato } from "@/components/oria/Contato";
 import { LinkedIn } from "@/components/oria/Icons";
 import { useContent } from "@/data/oria";
 import { useSEO } from "@/hooks/useSEO";
+import { useReveal } from "@/hooks/useReveal";
+import socioEnzo from "@/assets/socio-enzo.png";
+import socioGustavo from "@/assets/socio-gustavo.png";
+
+const PARTNER_PHOTOS: Record<string, string> = {
+  enzo: socioEnzo,
+  gustavo: socioGustavo,
+};
 
 const SCHEMA_SOCIOS = [
   {
@@ -111,23 +118,7 @@ const SociosPage = () => {
     schema: SCHEMA_SOCIOS,
   });
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    const els = document.querySelectorAll<HTMLElement>(".reveal");
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            e.target.classList.add("visible");
-            io.unobserve(e.target);
-          }
-        });
-      },
-      { threshold: 0.12, rootMargin: "0px 0px -50px 0px" },
-    );
-    els.forEach((el) => io.observe(el));
-    return () => io.disconnect();
-  }, []);
+  useReveal(true);
 
   return (
     <>
@@ -146,45 +137,76 @@ const SociosPage = () => {
               intro={UI.socios.intro}
             />
 
-            <div className="grid sm:grid-cols-2 border-t border-l border-rule reveal">
-              {SOCIOS.map((s) => (
-                <article key={s.name} className="p-7 sm:p-10 md:p-12 border-r border-b border-rule bg-background">
-                  <div className="mb-6">
-                    <div className="font-mono-label text-[10px] text-accent mb-2">{s.role}</div>
-                    <h3 className="font-serif-display text-[clamp(22px,5vw,32px)] font-normal leading-[1.1] tracking-[-0.02em] mb-2 break-words">
-                      {s.name}
-                    </h3>
-                    {s.linkedin && (
-                      <a
-                        href={s.linkedin}
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        referrerPolicy="no-referrer"
-                        aria-label={`${UI.socios.linkedinAria} ${s.name}`}
-                        className="inline-flex items-center gap-2 text-muted hover:text-foreground transition-colors text-[12px] font-mono-label"
-                      >
-                        <LinkedIn className="w-4 h-4" />
-                        LinkedIn →
-                      </a>
-                    )}
-                  </div>
+            <div className="mt-4 md:mt-8 flex flex-col gap-16 md:gap-28">
+              {SOCIOS.map((s, idx) => {
+                const photo = PARTNER_PHOTOS[s.photo];
+                const photoLeft = idx % 2 === 0;
+                return (
+                  <article
+                    key={s.name}
+                    className="reveal grid gap-8 md:gap-14 md:grid-cols-[minmax(0,0.85fr)_1fr] items-start"
+                  >
+                    {/* Retrato */}
+                    <div className={photoLeft ? "md:order-1" : "md:order-2"}>
+                      <div className="relative">
+                        {photo ? (
+                          <img
+                            src={photo}
+                            alt={s.name}
+                            width={640}
+                            height={800}
+                            loading="lazy"
+                            className="w-full aspect-[4/5] object-cover object-top grayscale contrast-[1.02] bg-paper-warm"
+                          />
+                        ) : (
+                          <div className="w-full aspect-[4/5] bg-foreground flex items-center justify-center">
+                            <span className="font-serif-display text-background text-5xl">{s.initials}</span>
+                          </div>
+                        )}
+                        {/* fio de acento, canto inferior */}
+                        <span aria-hidden className="absolute -bottom-px left-0 h-[3px] w-16 bg-accent" />
+                      </div>
+                    </div>
 
-                  <ul className="list-none mb-8 border-t border-rule">
-                    {s.highlights.map((h, i) => (
-                      <li key={i} className="flex gap-4 py-3 border-b border-rule text-[14px] leading-[1.5] text-ink-soft">
-                        <span className="font-mono text-[10px] text-muted tracking-[0.15em] w-5 shrink-0 pt-1">
-                          {toRoman(i + 1)}
-                        </span>
-                        <span>{h}</span>
-                      </li>
-                    ))}
-                  </ul>
+                    {/* Conteúdo */}
+                    <div className={photoLeft ? "md:order-2 md:pt-2" : "md:order-1 md:pt-2"}>
+                      <div className="font-mono-label text-[11px] text-accent mb-4">{s.role}</div>
+                      <h2 className="font-serif-display text-[clamp(30px,5.5vw,48px)] font-light leading-[1.02] tracking-[-0.02em] mb-5 break-words">
+                        {s.name}
+                      </h2>
+                      {s.linkedin && (
+                        <a
+                          href={s.linkedin}
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          referrerPolicy="no-referrer"
+                          aria-label={`${UI.socios.linkedinAria} ${s.name}`}
+                          className="inline-flex items-center gap-2 text-muted hover:text-accent transition-colors text-[12px] font-mono-label"
+                        >
+                          <LinkedIn className="w-4 h-4" />
+                          LinkedIn →
+                        </a>
+                      )}
 
-                  <div className="w-12 h-px bg-foreground my-7" />
+                      <ul className="list-none mt-8 mb-9 border-t border-rule">
+                        {s.highlights.map((h, i) => (
+                          <li
+                            key={i}
+                            className="flex gap-5 py-4 border-b border-rule text-[14.5px] leading-[1.55] text-ink-soft"
+                          >
+                            <span className="font-mono text-[10px] text-accent tracking-[0.15em] w-6 shrink-0 pt-1">
+                              {toRoman(i + 1)}
+                            </span>
+                            <span>{h}</span>
+                          </li>
+                        ))}
+                      </ul>
 
-                  <div>{renderBio(s.bio)}</div>
-                </article>
-              ))}
+                      <div className="max-w-[560px]">{renderBio(s.bio)}</div>
+                    </div>
+                  </article>
+                );
+              })}
             </div>
           </div>
         </section>

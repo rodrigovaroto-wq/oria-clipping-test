@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Nav } from "@/components/oria/Nav";
 import { Footer } from "@/components/oria/Footer";
 import { Hero } from "@/components/oria/Hero";
@@ -9,6 +8,7 @@ import { Diferenciais } from "@/components/oria/Diferenciais";
 import { NoticiasHome } from "@/components/oria/NoticiasHome";
 import { Contato } from "@/components/oria/Contato";
 import { useSEO } from "@/hooks/useSEO";
+import { useReveal } from "@/hooks/useReveal";
 
 const SCHEMA_HOME = {
   "@context": "https://schema.org",
@@ -31,22 +31,7 @@ const IndexPage = () => {
     schema: SCHEMA_HOME,
   });
 
-  useEffect(() => {
-    const els = document.querySelectorAll<HTMLElement>(".reveal");
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            e.target.classList.add("visible");
-            io.unobserve(e.target);
-          }
-        });
-      },
-      { threshold: 0.12, rootMargin: "0px 0px -50px 0px" },
-    );
-    els.forEach((el) => io.observe(el));
-    return () => io.disconnect();
-  }, []);
+  useReveal();
 
   return (
     <>
