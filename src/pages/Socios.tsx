@@ -187,14 +187,9 @@ const SociosPage = () => {
                             </li>
                           ))}
                         </ul>
-                      </div>
-                    </div>
 
-                    {/* Biografia — mesmo lado do texto (direita no Enzo, esquerda no Gustavo) */}
-                    <div className={`mt-8 md:mt-10 grid gap-8 md:gap-12 ${cols}`}>
-                      <div className={`hidden md:block ${photoLeft ? "md:order-1" : "md:order-2"}`} />
-                      <div className={`max-w-[760px] ${photoLeft ? "md:order-2" : "md:order-1"}`}>
-                        {renderBio(s.bio)}
+                        {/* Biografia — logo após os 3 tópicos, no mesmo lado do texto */}
+                        <div className="mt-6 max-w-[760px]">{renderBio(s.bio)}</div>
                       </div>
                     </div>
                   </article>
