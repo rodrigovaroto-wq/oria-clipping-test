@@ -1,0 +1,15 @@
+---
+title: "Oi alerta para risco de interrupção das operações após queda acentuada do caixa"
+slug: "oi-alerta-para-risco-de-interrupcao-das-operacoes-apos-queda-acentuada"
+description: "A Oi comunicou ao mercado que enfrenta um agravamento significativo de sua situação financeira, com risco de interrupção de suas operações a partir de 1º de agosto."
+summary_full: "A Oi comunicou ao mercado que enfrenta um agravamento significativo de sua situação financeira, com risco de interrupção de suas operações a partir de 1º de agosto. A empresa, que está em recuperação judicial, viu seu caixa reduzir drasticamente de R$ 88,1 milhões para R$ 19,6 milhões no final de julho. O gestor judicial alertou que o nível atual de recursos pode ser insuficiente para manter as operações no curto prazo. Em um contexto jurídico complexo, um pedido de vista suspendeu o julgamento de recursos de bancos credores contra a falência da Oi, que já passou por um processo de recuperação judicial anteriormente. A desembargadora Mônica Maria Costa Di Piero manifestou-se a favor da falência, e a situação da companhia se agrava com a desconfiança do mercado em relação à sua solvabilidade, dificultando a geração de receitas operacionais. A falência poderia permitir a venda ordenada de ativos e o pagamento de credores, mas a falta de recursos pode levar a Oi a um limbo jurídico, sem solução clara para sua continuidade operacional."
+date: "2026-07-10"
+category: "insolvencia"
+source_name: "Valor"
+source_url: "https://valor.globo.com/empresas/noticia/2026/07/09/oi-alerta-para-risco-de-interrupcao-das-operacoes-a-partir-de-agosto-apos-queda-do-caixa.ghtml"
+image: "https://s2-valor.glbimg.com/wfrhv8CKplRJhVKCBaUNQgridhM=/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2024/f/1/mZ3DJARaO96ytwnHpxxg/foto18emp-101-oi-b4.jpg"
+---
+
+A Oi comunicou ao mercado que enfrenta um agravamento significativo de sua situação financeira, com risco de interrupção de suas operações a partir de 1º de agosto. A empresa, que está em recuperação judicial, viu seu caixa reduzir drasticamente de R$ 88,1 milhões para R$ 19,6 milhões no final de julho. O gestor judicial alertou que o nível atual de recursos pode ser insuficiente para manter as operações no curto prazo. Em um contexto jurídico complexo, um pedido de vista suspendeu o julgamento de recursos de bancos credores contra a falência da Oi, que já passou por um processo de recuperação judicial anteriormente. A desembargadora Mônica Maria Costa Di Piero manifestou-se a favor da falência, e a situação da companhia se agrava com a desconfiança do mercado em relação à sua solvabilidade, dificultando a geração de receitas operacionais. A falência poderia permitir a venda ordenada de ativos e o pagamento de credores, mas a falta de recursos pode levar a Oi a um limbo jurídico, sem solução clara para sua continuidade operacional.
+
+Fonte: [Valor](https://valor.globo.com/empresas/noticia/2026/07/09/oi-alerta-para-risco-de-interrupcao-das-operacoes-a-partir-de-agosto-apos-queda-do-caixa.ghtml)
