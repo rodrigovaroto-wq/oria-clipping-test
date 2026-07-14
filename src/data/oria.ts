@@ -150,7 +150,7 @@ const PILARES_EN = [
 const INEGOCIAVEIS_PT = [
   {
     title: "Atalhos sem fundamento",
-    desc: "Não aceleramos diagnósticos para acomodar agendas políticas. Se o processo exige tempo, comunicamos isso. Velocidade sem fundamento produz decisões imprecisas que abrem brechas para erros.",
+    desc: "Atendemos pressões quando são legítimas e factuais, sem comprometer o rigor do processo.\nSe o diagnóstico exige tempo, comunicamos com transparência. \nVelocidade sem base compromete a precisão e aumenta o risco de erro.",
   },
   {
     title: "Soluções milagrosas",
