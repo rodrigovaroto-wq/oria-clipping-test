@@ -1,0 +1,15 @@
+---
+title: "Pão de Açúcar (PCAR3) refuta acusações de favorecimento a credores em plano de recuperação extrajudicial"
+slug: "pao-de-acucar-pcar3-refuta-acusacoes-de-favorecimento-a-credores-em-pl"
+description: "O GPA (PCAR3), proprietário da bandeira Pão de Açúcar, negou acusações de favorecimento a credores, especialmente ao Itaú Unibanco (ITUB4), em seu plano de recuperação…"
+summary_full: "O GPA (PCAR3), proprietário da bandeira Pão de Açúcar, negou acusações de favorecimento a credores, especialmente ao Itaú Unibanco (ITUB4), em seu plano de recuperação extrajudicial, conforme comunicado enviado ao mercado. A manifestação foi uma resposta a uma solicitação da B3, que buscava esclarecimentos sobre uma reportagem do Valor Econômico que mencionava impugnações ao plano de recuperação. Foram apresentadas seis impugnações, incluindo uma da Casas Bahia (BHIA3), protocolada na Justiça de São Paulo. O GPA confirmou que o prazo para escolha das opções de pagamento e apresentação de impugnações se encerrou em 13 de julho de 2026, e que o plano já contava com a adesão de credores que detêm 57,49% dos créditos. Aproximadamente 98% dos créditos sujeitos manifestaram suas opções, com 88,4% optando pela Opção A, que envolve uma emissão de cerca de R$ 2,6 bilhões em novos recursos. O GPA refutou as alegações de conflitos de interesse e destacou que as impugnações foram consideradas infundadas pelo Poder Judiciário. O GPA entrou com pedido de recuperação extrajudicial em março deste ano, com R$ 4,5 bilhões em dívidas."
+date: "2026-07-20"
+category: "reestruturacao"
+source_name: "Money Times"
+source_url: "https://www.moneytimes.com.br/pao-de-acucar-pcar3-refuta-acusacoes-de-favorecimento-a-credores-em-plano-de-recuperacao-extrajudicial-lmrs/"
+image: "https://www.moneytimes.com.br/uploads/2026/07/gpa-pao-de-acucar.jpg"
+---
+
+O GPA (PCAR3), proprietário da bandeira Pão de Açúcar, negou acusações de favorecimento a credores, especialmente ao Itaú Unibanco (ITUB4), em seu plano de recuperação extrajudicial, conforme comunicado enviado ao mercado. A manifestação foi uma resposta a uma solicitação da B3, que buscava esclarecimentos sobre uma reportagem do Valor Econômico que mencionava impugnações ao plano de recuperação. Foram apresentadas seis impugnações, incluindo uma da Casas Bahia (BHIA3), protocolada na Justiça de São Paulo. O GPA confirmou que o prazo para escolha das opções de pagamento e apresentação de impugnações se encerrou em 13 de julho de 2026, e que o plano já contava com a adesão de credores que detêm 57,49% dos créditos. Aproximadamente 98% dos créditos sujeitos manifestaram suas opções, com 88,4% optando pela Opção A, que envolve uma emissão de cerca de R$ 2,6 bilhões em novos recursos. O GPA refutou as alegações de conflitos de interesse e destacou que as impugnações foram consideradas infundadas pelo Poder Judiciário. O GPA entrou com pedido de recuperação extrajudicial em março deste ano, com R$ 4,5 bilhões em dívidas.
+
+Fonte: [Money Times](https://www.moneytimes.com.br/pao-de-acucar-pcar3-refuta-acusacoes-de-favorecimento-a-credores-em-plano-de-recuperacao-extrajudicial-lmrs/)
