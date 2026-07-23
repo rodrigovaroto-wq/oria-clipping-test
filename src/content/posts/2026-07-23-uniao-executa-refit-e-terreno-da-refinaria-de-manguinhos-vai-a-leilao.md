@@ -1,0 +1,15 @@
+---
+title: "União executa Refit e terreno da refinaria de Manguinhos vai a leilão"
+slug: "uniao-executa-refit-e-terreno-da-refinaria-de-manguinhos-vai-a-leilao"
+description: "A União Federal executou a Refit, proprietária da refinaria de Manguinhos, e o terreno onde a planta está localizada será leiloado em setembro."
+summary_full: "A União Federal executou a Refit, proprietária da refinaria de Manguinhos, e o terreno onde a planta está localizada será leiloado em setembro. O valor estimado do terreno, que inclui o prédio e as instalações, é de R$ 23,54 milhões, com um lance mínimo estipulado em R$ 11,77 milhões, correspondente a 50% do valor total. O leilão, autorizado pelo juiz substituto da 3ª Vara Federal de Execuções Judiciais do Rio de Janeiro, ocorrerá na modalidade eletrônica no dia 9 de setembro, às 14h. O imóvel, com quase 600 mil m², é classificado como industrial e possui infraestrutura urbana adequada, incluindo acesso a transporte coletivo. Esta ação é resultado de um processo de execução fiscal, e a Refit enfrenta dificuldades adicionais, como a suspensão de uma liminar que impedia a atuação de diretores da ANP em processos relacionados à empresa. A Refit, considerada a maior devedora de impostos do Brasil, foi alvo de operações policiais que investigaram fraudes no setor de combustíveis, resultando no bloqueio de R$ 52 bilhões. O empresário Ricardo Magro é identificado como proprietário da refinaria, conforme decisão do STF."
+date: "2026-07-23"
+category: "insolvencia"
+source_name: "Valor"
+source_url: "https://valor.globo.com/empresas/noticia/2026/07/22/unio-executa-refit-e-terreno-da-refinaria-de-manguinhos-vai-a-leilo.ghtml"
+image: "https://s2-valor.glbimg.com/ld8VJHdXosRylIHa6Dsiie7jSwU=/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/p/L/jO2LthSZamMCZBrMIc0w/445739442.jpg"
+---
+
+A União Federal executou a Refit, proprietária da refinaria de Manguinhos, e o terreno onde a planta está localizada será leiloado em setembro. O valor estimado do terreno, que inclui o prédio e as instalações, é de R$ 23,54 milhões, com um lance mínimo estipulado em R$ 11,77 milhões, correspondente a 50% do valor total. O leilão, autorizado pelo juiz substituto da 3ª Vara Federal de Execuções Judiciais do Rio de Janeiro, ocorrerá na modalidade eletrônica no dia 9 de setembro, às 14h. O imóvel, com quase 600 mil m², é classificado como industrial e possui infraestrutura urbana adequada, incluindo acesso a transporte coletivo. Esta ação é resultado de um processo de execução fiscal, e a Refit enfrenta dificuldades adicionais, como a suspensão de uma liminar que impedia a atuação de diretores da ANP em processos relacionados à empresa. A Refit, considerada a maior devedora de impostos do Brasil, foi alvo de operações policiais que investigaram fraudes no setor de combustíveis, resultando no bloqueio de R$ 52 bilhões. O empresário Ricardo Magro é identificado como proprietário da refinaria, conforme decisão do STF.
+
+Fonte: [Valor](https://valor.globo.com/empresas/noticia/2026/07/22/unio-executa-refit-e-terreno-da-refinaria-de-manguinhos-vai-a-leilo.ghtml)
